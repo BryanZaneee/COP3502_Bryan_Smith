@@ -31,7 +31,8 @@ def encode(password):
     # Each individual digit in the password will be added by 3, then % by 10.
     # % by 10 ensures the new digit remains a single digit. ex * (8+3) % 10 = 1 *
     for digit in password:
-        encoded_password = str((int(digit) + 3) % 10)
+        new_digit = str((int(digit) + 3) % 10)
+        encoded_password += new_digit
     return encoded_password
 
 
