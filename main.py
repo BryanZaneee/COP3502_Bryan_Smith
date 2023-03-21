@@ -11,7 +11,7 @@ def main():
         # 1 makes use of the encode() function
         if choice == "1":
             password = input("Please enter your password to encode: ")
-            encoded_password = encode(password)
+            encode(password)
             print("Your password has been encoded and stored!\n")
         # 2 will be the decode function to undo the encoding
         elif choice == "2":
