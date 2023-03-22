@@ -41,7 +41,7 @@ def decode(new_password):
     for i in range(0, length):  # Loops from 0 to length of password
         decoded_num = (int(new_password[i]) - 3) % 10  # If a negative value, % equation allows for the original value to be gained
         decoded_password += str(decoded_num)  # Converts value to string, and adds to empty variable
-    return new_password
+    return decoded_password
 
 
 if __name__ == '__main__':
