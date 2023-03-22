@@ -11,11 +11,12 @@ def main():
         # 1 makes use of the encode() function
         if choice == "1":
             password = input("Please enter your password to encode: ")
-            encode(password)
+            new_password = encode(password)
             print("Your password has been encoded and stored!\n")
         # 2 will be the decode function to undo the encoding
         elif choice == "2":
-            print(f"The encoded password is {encode(password)} , and the original password is {decode(encoded_password)}.")
+            decode(new_password)
+            print(f"The encoded password is {encode(password)} , and the original password is {decode(new_password)}.")
         # Ends the program
         elif choice == "3":
             print("Goodbye!")
